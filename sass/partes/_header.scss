@@ -1,0 +1,36 @@
+/*************** HEADER ***************/
+
+.titulo {
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    color: #000000;
+}
+
+.listaMenu {
+    padding: 3rem;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+    .listaMenu li {
+        display: inline;
+        padding: 0 30px;
+        background-color: transparent;
+    }
+    
+    .listaMenu a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        background-color: transparent;
+    }
+        
+        .listaMenu a:hover{
+            color: $naranjita;
+        }

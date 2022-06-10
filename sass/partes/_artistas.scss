@@ -1,0 +1,54 @@
+/*************** ARTISTAS ***************/
+
+#sectionArtistas {
+    padding-top: 50px;
+}
+
+    #sectionArtistas section {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+.artistasTexto {
+    width: 300px;
+    padding-right: 100px;
+}
+
+.artistasCuadros {
+    padding-left: 100px;
+}
+
+.btn-primary{
+    background-color: black;
+    border: 1px solid white;
+    font-size: larger;
+}
+
+    .btn-primary:hover {
+        color: $naranjita;
+        background-color: black;
+        border: 1px solid $naranjita;
+    }
+
+    .btn-primary:focus {
+        color: $naranjita;
+        background-color: black;
+        border: 1px solid $naranjita;
+        box-shadow: none;
+    }
+
+.card-body{
+    background-color: black;
+    color: white;
+}
+
+.crrArtistas {
+    width: 500px;
+
+    &_imgcrrArtistas{
+        width: 400px;
+        height: 300px;
+    }
+}

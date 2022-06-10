@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    display: grid;
+    background-color: black;
+}
+
+/*Header*/
+
+.listaMenu {
+    padding: 3rem;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .listaMenu li {
+        display: inline;
+        padding: 0 30px;
+        background-color: transparent;
+    }
+
+    .listaMenu a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        background-color: transparent;
+    }
+
+        .listaMenu a:hover{
+            color: rgb(248, 194, 94);
+        }
+
+/*Inicio*/
+
+/* Hero section */
+
+.heroGaleria {
+    background-image: url(https://i0.wp.com/www.periodismo.com/wp-content/subid/cover2-2400x1600.jpg?fit=2400%2C1600&ssl=1);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+    .heroGaleria h1 {
+        font-size: 60px;
+        font-style: italic;
+        font-weight: 200;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+/*Carrusel de fotos*/
+
+.container-fluid{
+    padding: 40px 150px;
+}
+
+/* Secciones de Lorems */
+
+#sectionInscripciones {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    
+}
+
+    #sectionInscripciones article {
+        margin: 40px;
+        padding: 40px;
+        text-align: center;
+        border: 2px solid black;
+        background: linear-gradient(90deg, rgba(248,194,94,1) 0%, rgba(248,163,94,1) 35%,
+            rgba(248,194,94,1) 67%, rgba(248,163,94,1) 100%);
+            
+    }
+
+    #sectionInscripciones h2 {
+        font-size: 30px;
+        font-weight: 200;
+        text-align: center;
+        color: black;
+        margin-bottom: 20px;
+        background: linear-gradient(90deg, rgba(248,194,94,1) 0%, rgba(248,163,94,1) 35%,
+            rgba(248,194,94,1) 67%, rgba(248,163,94,1) 100%)
+    }
+
+    #sectionInscripciones p {
+        color: black;
+        background: linear-gradient(90deg, rgba(248,194,94,1) 0%, rgba(248,163,94,1) 35%, rgba(248,194,94,1) 67%, rgba(248,163,94,1) 100%)
+    }
+
+/* Newsletter */
+
+#sectionNews {
+    display: grid;
+    place-items: center;
+}
+
+    #sectionNews form {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        max-width: 680px;
+        margin: 20px;
+        padding: 40px;
+        background: linear-gradient(90deg, rgba(248,194,94,1) 0%, rgba(248,163,94,1) 35%, rgba(248,194,94,1) 67%, rgba(248,163,94,1) 100%)
+    }
+
+    #sectionNews h2 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        background: linear-gradient(90deg, rgba(248,194,94,1) 0%, rgba(248,163,94,1) 35%, rgba(248,194,94,1) 67%, rgba(248,163,94,1) 100%)
+    }
+
+    #sectionNews p{
+        color: black;
+        margin-bottom: 5px;
+    }
+
+    #sectionNews input {
+        background-color: white;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #sectionNews div,
+    #sectionNews label {
+        color: black;
+        padding: 10px 0;
+    }
+
+.btn-outline-light{
+    border: 1px solid rgb(248, 194, 94);
+}
+
+/* Redes Sociales */
+
+#sectionRedes h3{
+    display: flex;
+    color: white;
+    font-size: large;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+#sectionRedes div{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#sectionRedes a {
+    padding: 0 15px;
+    margin: 0 1%;
+}
+
+/*Artistas*/
+
+#sectionArtistas {
+    padding-top: 50px;
+}
+
+    #sectionArtistas section {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+.artistasTexto {
+    width: 300px;
+    padding-right: 100px;
+}
+
+.artistasCuadros {
+    padding-left: 100px;
+}
+
+.btn-primary{
+    background-color: black;
+    border: 1px solid white;
+    font-size: larger;
+}
+
+    .btn-primary:hover {
+        color: rgb(248, 194, 94);
+        background-color: black;
+        border: 1px solid rgb(248, 194, 94);
+    }
+
+    .btn-primary:focus {
+        color: rgb(248, 194, 94);
+        background-color: black;
+        border: 1px solid rgb(248, 194, 94);
+        box-shadow: none;
+    }
+
+.card-body{
+    background-color: black;
+    color: white;
+}
+
+.crrArtistas {
+    width: 500px;
+}
+
+.crrArtistas_imgcrrArtistas{
+    width: 400px;
+    height: 300px;
+}
+
+/*Exposiciones*/
+
+#sectionExpos {
+    margin-left: 20%;
+}
+
+    #sectionExpos article {
+        padding: 15px;
+    }
+
+    #sectionExpos p {
+        padding-top: 15px;
+    }
+
+    #sectionExpos h2, p {
+        color: white;
+    }
+
+.tablaFechas {
+    margin: 5% auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.tablaMes {
+    text-align: center;
+}
+
+.tablaDato {
+    text-align: left;
+    border: 2px solid black;
+    padding: 15px;
+    background: linear-gradient(90deg, rgba(248,194,94,1) 0%, rgba(248,163,94,1) 35%, rgba(248,194,94,1) 67%, rgba(248,163,94,1) 100%);
+}
+
+.tablaFechas,
+.tablaMes {
+    padding: 15px;
+    background: linear-gradient(90deg, rgba(248,194,94,1) 0%, rgba(248,163,94,1) 35%, rgba(248,194,94,1) 67%, rgba(248,163,94,1) 100%);
+}
+
+/*Nosotros*/
+
+#sectionNosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    width: 800px;
+}
+
+    #sectionNosotros article {
+        padding: 25px;
+    }
+
+    #sectionNosotros h2, p{
+        color: white;
+        padding-top: 15px;
+        line-height: 30px;
+    }
+
+#staffLista {
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+    #staffLista li {
+        list-style-type: none;
+        color: white;
+        line-height: 30px;
+    }
+
+/*Contacto*/
+
+#sectionContacto {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    #sectionContacto article {
+        padding: 30px;
+        text-align: center;
+    }
+
+    #sectionContacto h2 {
+        text-align: center;
+        margin: 1% 0;
+        padding: 15px 0;
+    }
+
+    #sectionContacto h2, label {
+        color: white;
+    }
+
+    #sectionContacto form {
+        margin-top: 5%;
+        padding: 30px;
+        border: 1px solid rgb(248, 194, 94);
+    }
+
+    #sectionContacto div {
+        padding: 20px;
+    }
+
+.btnContacto{
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: 1px solid rgb(248, 194, 94);
+    width: 80px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+    .btnContacto:hover{
+        color: rgb(248, 194, 94);
+    }
+
+/*Footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+    footer p {
+        width: 100%;
+        color: white;
+        background-color: black;
+        text-align: center;
+    }
+
+/* MEDIA QUERIES */
+
+/* MEDIA 480px PARA ARRIBA */
+
+@media screen and (max-width: 480px){
+
+    .heroGaleria{
+        display: none;
+    }
+}
+
+/* MEDIA 768px PARA ARRIBA */
+
+@media screen and (max-width: 768px) {
+
+    .heroGaleria {
+        display: none;
+    }
+
+    .container-fluid{
+        display: none;
+    }
+
+    #sectionInscripciones {
+        background-image: url(https://www.viajarwashington.com/img/galeria-arte-washington.jpg);
+        grid-template-columns: 1fr;
+        height: 160vh;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/* MEDIA 1024px PARA ARRIBA */
+
+@media screen and (max-width: 1024px) {
+    .listaMenu a {
+        color: rgb(248, 194, 94);
+    }
+
+    footer p {
+        color: rgb(248, 194, 94);
+    }
+}
+
+/* ANIMACIONES */
+
+/*TITULO INICIO*/
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  /* CONTACTO */
+
+  .fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,52 @@
+/*************** CONTACTO ***************/
+
+#sectionContacto{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    #sectionContacto article {
+        padding: 30px;
+        text-align: center;
+    }
+
+    #sectionContacto h2 {
+        text-align: center;
+        margin: 1% 0;
+        padding: 15px 0;
+    }
+
+    #sectionContacto h2, label{
+        color: white;
+    }
+
+    #sectionContacto form{
+        margin-top: 5%;
+        padding: 30px;
+        border: 1px solid $naranjita;
+    }
+
+    #sectionContacto div {
+        padding: 20px;
+    }
+
+.btnContacto{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: 1px solid $naranjita;
+    width: 80px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+    .btnContacto:hover{
+        color: $naranjita;
+    }
+
+    .btn-outline-light{
+        border: 1px solid $naranjita;
+    }

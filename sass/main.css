@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  background-color: black;
+}
+
+/*************** HEADER ***************/
+.titulo {
+  font-size: 100px;
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+  color: #000000;
+}
+
+.listaMenu {
+  padding: 3rem;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.listaMenu li {
+  display: inline;
+  padding: 0 30px;
+  background-color: transparent;
+}
+
+.listaMenu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  background-color: transparent;
+}
+
+.listaMenu a:hover {
+  color: #f8c25e;
+}
+
+/*************** INDEX ***************/
+/* Hero section */
+.heroGaleria {
+  background-image: url(https://i0.wp.com/www.periodismo.com/wp-content/subid/cover2-2400x1600.jpg?fit=2400%2C1600&ssl=1);
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.heroGaleria_heroTitle {
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*Carrusel de fotos*/
+.crrContainer {
+  padding: 40px 150px;
+}
+
+.crrContainer_imgcrr {
+  height: 600px;
+}
+
+/* Secciones de inscripciones */
+#sectionInscripciones {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#sectionInscripciones article {
+  margin: 40px;
+  padding: 40px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: #f8c25e;
+}
+
+#sectionInscripciones h2 {
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  background-color: #f8c25e;
+}
+
+#sectionInscripciones p {
+  color: black;
+  background-color: #f8c25e;
+}
+
+/* Newsletter */
+#sectionNews {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#sectionNews form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  text-align: center;
+  max-width: 680px;
+  margin: 20px;
+  padding: 40px;
+  background-color: #f8c25e;
+}
+
+#sectionNews h2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  background-color: #f8c25e;
+}
+
+#sectionNews p {
+  color: black;
+  margin-bottom: 5px;
+}
+
+#sectionNews div,
+#sectionNews label {
+  color: black;
+  padding: 10px 0;
+}
+
+#sectionNews input {
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+#sectionRedes h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: large;
+  padding-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sectionRedes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+}
+
+#sectionRedes a {
+  padding: 0 15px;
+  margin: 0 1%;
+}
+
+/*************** ARTISTAS ***************/
+#sectionArtistas {
+  padding-top: 50px;
+}
+
+#sectionArtistas section {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.artistasTexto {
+  width: 300px;
+  padding-right: 100px;
+}
+
+.artistasCuadros {
+  padding-left: 100px;
+}
+
+.btn-primary {
+  background-color: black;
+  border: 1px solid white;
+  font-size: larger;
+}
+
+.btn-primary:hover {
+  color: #f8c25e;
+  background-color: black;
+  border: 1px solid #f8c25e;
+}
+
+.btn-primary:focus {
+  color: #f8c25e;
+  background-color: black;
+  border: 1px solid #f8c25e;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.card-body {
+  background-color: black;
+  color: white;
+}
+
+.crrArtistas {
+  width: 500px;
+}
+
+.crrArtistas_imgcrrArtistas {
+  width: 400px;
+  height: 300px;
+}
+
+/*************** EXPOSICIONES ***************/
+#sectionExpos {
+  margin-left: 20%;
+}
+
+#sectionExpos article {
+  padding: 15px;
+}
+
+#sectionExpos p {
+  padding-top: 15px;
+}
+
+#sectionExpos h2, p {
+  color: white;
+}
+
+.tablaFechas {
+  margin: 5% auto;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: #f8c25e;
+}
+
+.tablaFechas_tablaMes {
+  text-align: center;
+  padding: 15px;
+  background-color: #f8c25e;
+}
+
+.tablaFechas_tablaDato {
+  text-align: left;
+  border: 2px solid black;
+  padding: 15px;
+  background-color: #f8c25e;
+}
+
+/*************** NOSOTROS ***************/
+#sectionNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-self: center;
+  width: 800px;
+}
+
+#sectionNosotros article {
+  padding: 25px;
+}
+
+#sectionNosotros h2, p {
+  color: white;
+  padding-top: 15px;
+  line-height: 30px;
+}
+
+#staffLista {
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+#staffLista li {
+  list-style-type: none;
+  color: white;
+  line-height: 30px;
+}
+
+/*************** CONTACTO ***************/
+#sectionContacto {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sectionContacto article {
+  padding: 30px;
+  text-align: center;
+}
+
+#sectionContacto h2 {
+  text-align: center;
+  margin: 1% 0;
+  padding: 15px 0;
+}
+
+#sectionContacto h2, label {
+  color: white;
+}
+
+#sectionContacto form {
+  margin-top: 5%;
+  padding: 30px;
+  border: 1px solid #f8c25e;
+}
+
+#sectionContacto div {
+  padding: 20px;
+}
+
+.btnContacto {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border: 1px solid #f8c25e;
+  width: 80px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.btnContacto:hover {
+  color: #f8c25e;
+}
+
+.btn-outline-light {
+  border: 1px solid #f8c25e;
+}
+
+/*************** FOOTER ***************/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  height: 100px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+footer p {
+  width: 100%;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+/*************** ANIMACIONES ***************/
+/*TITULO INICIO*/
+.scale-up-center {
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* CONTACTO */
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*************** MEDIA QUERIES ***************/
+/* MEDIA 480px PARA ARRIBA */
+@media screen and (max-width: 480px) {
+  .heroGaleria {
+    display: none;
+  }
+}
+
+/* MEDIA 768px PARA ARRIBA */
+@media screen and (max-width: 768px) {
+  .heroGaleria {
+    display: none;
+  }
+  .container-fluid {
+    display: none;
+  }
+  #sectionInscripciones {
+    background-image: url(https://www.viajarwashington.com/img/galeria-arte-washington.jpg);
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+/* MEDIA 1024px PARA ARRIBA */
+@media screen and (max-width: 1024px) {
+  .listaMenu a {
+    color: #f8c25e;
+  }
+  footer p {
+    color: #f8c25e;
+  }
+  .crrArtistas {
+    max-width: 500px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

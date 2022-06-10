@@ -1,0 +1,29 @@
+/*************** NOSOTROS ***************/
+
+#sectionNosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    width: 800px;
+}
+    
+    #sectionNosotros article {
+        padding: 25px;
+    }
+    
+    #sectionNosotros h2, p{
+        color: white;
+        padding-top: 15px;
+        line-height: 30px;
+    }
+    
+#staffLista {
+    margin: 0 auto;
+    padding-top: 15px;
+}
+    
+    #staffLista li {
+        list-style-type: none;
+        color: white;
+        line-height: 30px;
+    }

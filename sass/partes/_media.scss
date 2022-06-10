@@ -1,0 +1,45 @@
+/*************** MEDIA QUERIES ***************/
+
+/* MEDIA 480px PARA ARRIBA */
+
+@media screen and (max-width: 480px){
+
+    .heroGaleria{
+        display: none;
+    }
+}
+
+/* MEDIA 768px PARA ARRIBA */
+
+@media screen and (max-width: 768px) {
+
+    .heroGaleria {
+        display: none;
+    }
+
+    .container-fluid{
+        display: none;
+    }
+
+    #sectionInscripciones {
+        background-image: url(https://www.viajarwashington.com/img/galeria-arte-washington.jpg);
+        grid-template-columns: 1fr;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/* MEDIA 1024px PARA ARRIBA */
+
+@media screen and (max-width: 1024px) {
+    .listaMenu a {
+        color: $naranjita;
+    }
+
+    footer p {
+        color: $naranjita;
+    }
+
+    .crrArtistas {
+        max-width: 500px; }
+}

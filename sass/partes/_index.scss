@@ -1,0 +1,125 @@
+/*************** INDEX ***************/
+
+/* Hero section */
+
+.heroGaleria {
+    background-image: url(https://i0.wp.com/www.periodismo.com/wp-content/subid/cover2-2400x1600.jpg?fit=2400%2C1600&ssl=1);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+
+    &_heroTitle {
+        font-size: 60px;
+        font-style: italic;
+        font-weight: 200;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/*Carrusel de fotos*/
+
+.crrContainer{
+    padding: 40px 150px;
+
+    &_imgcrr{
+        height: 600px;
+    }
+}
+    
+/* Secciones de inscripciones */
+
+#sectionInscripciones {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+}
+    
+    #sectionInscripciones article {
+        margin: 40px;
+        padding: 40px;
+        text-align: center;
+        border: 2px solid black;
+        background-color: $naranjita;
+    }
+    
+    #sectionInscripciones h2 {
+        font-size: 25px;
+        font-weight: 200;
+        text-align: center;
+        color: black;
+        margin-bottom: 20px;
+        background-color: $naranjita;
+    }
+
+    #sectionInscripciones p {
+        color: black;
+        background-color: $naranjita;
+    }
+
+/* Newsletter */
+
+#sectionNews {
+    display: grid;
+    place-items: center;
+}
+    
+    #sectionNews form {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        max-width: 680px;
+        margin: 20px;
+        padding: 40px;
+        background-color: $naranjita;
+    }
+
+    #sectionNews h2 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        background-color: $naranjita;
+    }
+
+    #sectionNews p{
+        color: black;
+        margin-bottom: 5px;
+    }
+
+    #sectionNews div,
+    #sectionNews label {
+        color: black;
+        padding: 10px 0;
+    }
+
+    #sectionNews input {
+        background-color: white;
+        padding: 5px;
+        margin: 5px;
+    }
+
+#sectionRedes h3{
+    display: flex;
+    color: white;
+    font-size: large;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+#sectionRedes div{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#sectionRedes a {
+    padding: 0 15px;
+    margin: 0 1%;
+}
